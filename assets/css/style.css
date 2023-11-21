@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 html {
@@ -13,19 +13,20 @@ html {
 header {
     background-color: #FF6900;
     position: fixed;
-    width: 100%;
+    width: 330%;
     /* bottom: 0; */
     top: 0;
     left: 0;
     right: 0;
 
     height: 70px;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.30);
 }
 
 header .container {
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     width: 30%;
@@ -35,14 +36,38 @@ header nav ul {
     display: flex;
     gap: 10px;
     padding: 20px;
+    margin: 0 70px 0 70px;
 }
 
 ul {
     list-style-type: none;
 }
 
+li {
+    margin-right: 10px;
+}
+
 a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+header .logo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 130px;
+    margin: 0 200px 0 10px;
+}
+
+header .account {
+    margin: 0 70px 0 0;
+}
+
+header .account .fa-regular, .fa-solid {
+    color: white;
+    gap: 10px;
+    padding: 10px
 }
